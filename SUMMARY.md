@@ -5,7 +5,7 @@
     * [第1节：三棵树](Chapter1/tree.md)
     * [第2节：渲染流程](Chapter1/pipeline.md)
     * [第3节：key与复用](Chapter1/key.md)
-    * [第4节：生命周期方法](Chapter1/life_circle.md)
+
 * [第二章 性能优化](Chapter2/README.md)
     * [第1节：widget重建优化](Chapter2/widet_build.md)
     * [第2节：布局优化](Chapter2/layout.md)
