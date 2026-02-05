@@ -5,6 +5,7 @@ export default defineConfig({
     title: "Flutter Quiz",
     description: "Flutter 底层原理认识和经验总结",
     lang: 'zh-CN',
+    base: '/flutterQuiz/',
     outDir: './docs',
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
