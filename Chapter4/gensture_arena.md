@@ -8,8 +8,8 @@
 
 如果对一个组件同时监听水平和垂直方向的拖动手势，当我们斜着拖动时哪个方向的拖动手势回调会被触发？实际上取决于第一次移动时两个轴上的位移分量，哪个轴的大，哪个轴在本次滑动事件竞争中就胜出。上面已经说过，每一个手势识别器（`GestureRecognizer`）都是一个“竞争者”（`GestureArenaMember`），当发生指针事件时，他们都要在“竞技场”去竞争本次事件的处理权，默认情况最终只有一个“竞争者”会胜出(win)。例如，假设有一个`ListView`，它的第一个子组件也是`ListView`，如果现在滑动这个子`ListView`，父`ListView`会动吗？答案是否定的，这时只有子`ListView`会动，因为这时子`ListView`会胜出而获得滑动事件的处理权。
 
-## 两个特殊的例子:
-### EagerGestureRecognizer（急切胜出）：有些手势（如点击 Tap）可能在某些条件下立刻宣布胜出，而不给其他手势竞争的机会。
+### 两个特殊的例子:
+ EagerGestureRecognizer（急切胜出）：有些手势（如点击 Tap）可能在某些条件下立刻宣布胜出，而不给其他手势竞争的机会。
 
-### 手势透传：如果你希望父子组件同时动（例如：滑动子列表到底部后带动父列表），通常不能通过竞技场默认逻辑实现，而需要使用特殊的 RawGestureDetector 或者自定义手势识别器来手动管理 acceptGesture。
-#### 见: https://github.com/GuiTom/flutterQuiz/blob/master/examples/lib/chapter_4/user_interaction_page.dart
+ 手势透传：如果你希望父子组件同时动（例如：滑动子列表到底部后带动父列表），通常不能通过竞技场默认逻辑实现，而需要使用特殊的 RawGestureDetector 或者自定义手势识别器来手动管理 acceptGesture。
+###### 见: https://github.com/GuiTom/flutterQuiz/blob/master/examples/lib/chapter_4/user_interaction_page.dart

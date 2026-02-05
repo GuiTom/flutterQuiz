@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Chapter4Page extends StatelessWidget {
-  const Chapter4Page({super.key});
+class NestedListView extends StatelessWidget {
+  const NestedListView({super.key});
 
   @override
   Widget build(BuildContext context) {
