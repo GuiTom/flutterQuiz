@@ -8,14 +8,14 @@ export default defineConfig({
     outDir: './docs',
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        nav: [
-            { text: '首页', link: '/' },
-            { text: '第一章 渲染流程', link: '/Chapter1/README' },
-            { text: '第二章 性能优化', link: '/Chapter2/README' },
-            { text: '第三章 线程/isolate/异步', link: '/Chapter3/README' },
-            { text: '第四章 用户交互', link: '/Chapter4/README' },
-            { text: '第五章 生僻语法', link: '/Chapter5/README' }
-        ],
+        // nav: [
+        //     { text: '首页', link: '/' },
+        //     { text: '第一章 渲染流程', link: '/Chapter1/README' },
+        //     { text: '第二章 性能优化', link: '/Chapter2/README' },
+        //     { text: '第三章 线程/isolate/异步', link: '/Chapter3/README' },
+        //     { text: '第四章 用户交互', link: '/Chapter4/README' },
+        //     { text: '第五章 生僻语法', link: '/Chapter5/README' }
+        // ],
 
         sidebar: [
             {
