@@ -18,7 +18,7 @@ Dart 的异步操作就是利用非阻塞式调用实现的。
 - event queue：负责处理I/O事件、绘制事件、手势事件、接收其他 isolate 消息等外部事件。
 - microtask queue：可以自己向 isolate 内部添加事件，事件的优先级比 event queue高。
 
-<img src="assets/image-20231211155527350.png" alt="image-20231211155527350" style="zoom:50%;" />
+<img src="./assets/image-20231211155527350.png" alt="image-20231211155527350" style="zoom:50%;" />
 
 ## Dart 中的异步
 

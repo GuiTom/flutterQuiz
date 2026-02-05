@@ -6,7 +6,7 @@ widget 重建由于只是对需求的描述，如果其不会引起element重建
 
 1.debug模式下，在android studio 的flutter perfomance 视图中勾选"Track widet rebuilds"可以实时追踪widget的重建次数。
 
-![widget重建次数追踪](assets/image-20230922183918065.png)
+![widget重建次数追踪](./assets/image-20230922183918065.png)
 
 ##### 1.尽可能减少setState的粒度
 

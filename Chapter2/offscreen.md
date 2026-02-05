@@ -45,8 +45,9 @@
 将代码中MaterialApp的checkerboardOffscreenLayers参数设置为true,开启离屏渲染标记开启运行以下代码，观察dev tool中的帧火焰图 中的帧率
 
 <details>
-  <summary>点我展查看代码</summary>
-<pre><code>
+  <summary>点我展开查看代码</summary>
+
+```dart
 class _State extends State<StatefulWidget> {
   @override
   void initState() {
@@ -85,7 +86,8 @@ class _State extends State<StatefulWidget> {
     );
   }
 }
-</code></pre>
+```
+
 </details>
 
 在手机上运行App，并观察火焰图上面的帧率然后将clipBehavior: Clip.antiAliasWithSaveLayer这一行打开，再观察火焰图上的帧率
@@ -95,11 +97,11 @@ class _State extends State<StatefulWidget> {
 ​							                  图一   离屏渲染出的界面
 ##### 以下是我在小米Mi6X手机上测得的帧率
 
-![非离谱渲染测试结果](assets/image-20230922175625316.png)
+![非离谱渲染测试结果](./assets/image-20230922175625316.png)
 
 ​											图二 非离屏渲染的帧率
 
-![离屏渲染测试结果](assets/image-20230922175802434.png)
+![离屏渲染测试结果](./assets/image-20230922175802434.png)
 
 ​											 图三 离屏渲染的帧率
 

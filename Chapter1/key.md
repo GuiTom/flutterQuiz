@@ -27,7 +27,7 @@ D.     无论是localKey还是GlobalKey都是为了标识element和widget,方便
 
 #### 3.  问:flutter绘制了两个并排的widget和一个按钮，他们的效果图和实现代码如下:
 
-![image-20230925144433978](assets/image-20230925144433978.webp)
+![image-20230925144433978](./assets/image-20230925144433978.webp)
 
 ```dart
 class WrappedStatefulkeyWidget extends StatefulWidget {

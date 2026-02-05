@@ -2,7 +2,7 @@
 
 State的生命周期可以分为4个阶段：初始化, 创建（插入视图树）、更新（在视图树中存在）、销毁（从视图树中移除)
 
-![img](assets/4.webp)
+![img](./assets/4.webp)
 
 1. createState
     createState 是 StatefulWidget 里创建 State 的方法，当要创建新的 StatefulWidget 的时候，会立即执行 createState，而且只执行一次，createState 必须要实现
@@ -16,7 +16,7 @@ State的生命周期可以分为4个阶段：初始化, 创建（插入视图树
 
 4. didChangeDependencies则用来专门处理State对象依赖关系变化，会在initState() 调用结束后，被Flutter调用。
 
-![img](assets/4_1.webp)
+![img](./assets/4_1.webp)
 
 ### 2. build
 
@@ -29,7 +29,7 @@ build，作用是构建视图。经过以上步骤，Framework认为State已经�
 
 ### 3. didChangeDependencie与didUpdateWidget的作用
 
-![img](assets/webp-20240315110435570)
+![img](./assets/webp-20240315110435570.webp)
 
 ### 5. App生命周期监听AppLifecycleListener
 

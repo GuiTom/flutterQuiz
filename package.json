@@ -1,0 +1,28 @@
+{
+  "name": "flutterQuiz",
+  "version": "1.0.0",
+  "description": "这本书记录我在过程中积累的对flutter底层的原理认识的和经验总结。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuiTom/flutterQuiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuiTom/flutterQuiz/issues"
+  },
+  "homepage": "https://github.com/GuiTom/flutterQuiz#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

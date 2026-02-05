@@ -2,7 +2,7 @@
 
 ### Widget\Element\RenderObject的关系？他们是如何协作的？
 
-![三棵树图片](assets/image-20230917081238786.webp "渲染流程建立的三棵树")
+![三棵树图片](./assets/image-20230917081238786.webp "渲染流程建立的三棵树")
 
 ​												图一 flutter的三棵树
 

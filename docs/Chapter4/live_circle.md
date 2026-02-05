@@ -29,7 +29,7 @@ build，作用是构建视图。经过以上步骤，Framework认为State已经�
 
 ### 3. didChangeDependencie与didUpdateWidget的作用
 
-![img](assets/webp-20240315110435570)
+![img](assets/webp-20240315110435570.webp)
 
 ### 5. App生命周期监听AppLifecycleListener
 

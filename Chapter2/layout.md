@@ -31,6 +31,6 @@
 对于以下两段列表布局代码，哪一段发生了内部传递?
 
 <div style="display: flex;">
-<img src="assets/image-20230925112654036.png"  width="552" height="230">
-<img src="assets/image-20230925112707609.png"  width="552" height="293">
+<img src="./assets/image-20230925112654036.png"  width="552" height="230">
+<img src="./assets/image-20230925112707609.png"  width="552" height="293">
 </div>
