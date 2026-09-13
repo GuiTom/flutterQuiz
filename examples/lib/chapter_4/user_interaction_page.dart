@@ -13,7 +13,7 @@ class NestedListView extends StatelessWidget {
         children: [
           const Padding(
             padding: EdgeInsets.all(16.0),
-            child: Text('学习命中测试、手势竞争等用户交互处理机制'),
+            child: Text('列表嵌套'),
           ),
           const Divider(),
           const Expanded(

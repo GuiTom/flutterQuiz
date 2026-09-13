@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:study/chapter_2/list_view_optimize.dart';
+import 'package:study/chapter_6/MVVMDesinMode.dart';
 import 'chapter_1/key_demo_page.dart';
 import 'chapter_1/rendering_pipeline_page.dart';
 import 'chapter_1/three_trees_page.dart';
@@ -16,6 +18,8 @@ import 'chapter_4/hit_test_behavior_page.dart';
 import 'chapter_4/lifecycle_page.dart';
 import 'chapter_4/user_interaction_page.dart';
 import 'chapter_5/yield_page.dart';
+import 'chapter_6/BlocPage.dart';
+import 'chapter_6/BlocPluginPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -80,7 +84,7 @@ class MyHomePage extends StatelessWidget {
           icon: Icons.rocket_launch,
           title: '开始阅读',
           // Links to the first actual chapter content
-          pageBuilder: (context) => const RenderingPipelinePage(), 
+          pageBuilder: (context) => const MyCustomWidget(),
         ),
         const MenuItem(
           icon: Icons.code,
@@ -95,7 +99,7 @@ class MyHomePage extends StatelessWidget {
         MenuItem(
           icon: '1.1',
           title: '渲染流程',
-          pageBuilder: (context) => const RenderingPipelinePage(),
+          pageBuilder: (context) => const MyCustomWidget(),
         ),
          MenuItem(
           icon: '1.2',
@@ -141,6 +145,11 @@ class MyHomePage extends StatelessWidget {
           icon: '2.6',
           title: '分帧渲染优化',
           pageBuilder: (context) => const FrameSeparatePage(),
+        ),
+        MenuItem(
+          icon: '2.7',
+          title: 'List.builder懒加载优化',
+          pageBuilder: (context) => const ListViewOptimizePage(),
         ),
       ],
     ),
@@ -196,6 +205,26 @@ class MyHomePage extends StatelessWidget {
           icon: '5.1',
           title: 'Yield',
           pageBuilder: (context) => const YieldPage(),
+        ),
+      ],
+    ),
+    MenuSection(
+      title: '第六章 设计模式',
+      items: [
+        MenuItem(
+          icon: '6.1',
+          title: 'MVVM',
+          pageBuilder: (context) => const MVVMDesignModePage(),
+        ),
+        MenuItem(
+          icon: '6.2',
+          title: 'bloc',
+          pageBuilder: (context) => const BLoCDesignModePage(),
+        ),
+        MenuItem(
+          icon: '6.3',
+          title: 'BlocPlugin',
+          pageBuilder: (context) => const BlocPluginPage(),
         ),
       ],
     ),
