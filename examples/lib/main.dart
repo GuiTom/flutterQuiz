@@ -20,6 +20,7 @@ import 'chapter_4/user_interaction_page.dart';
 import 'chapter_5/yield_page.dart';
 import 'chapter_6/BlocPage.dart';
 import 'chapter_6/BlocPluginPage.dart';
+import 'chapter7/InheritedWidget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -228,10 +229,22 @@ class MyHomePage extends StatelessWidget {
         ),
       ],
     ),
+    MenuSection(
+      title: '第七章 Inherited 扩展出的组件',
+      items: [
+        MenuItem(
+          icon: '7.1',
+          title: 'Inherited 扩展出的组件',
+          subtitle: '依赖登记、InheritedNotifier、InheritedModel 与家族图谱',
+          pageBuilder: (context) => const InheritedWidgets(),
+        ),
+      ],
+    ),
   ];
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
