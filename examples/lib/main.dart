@@ -21,6 +21,7 @@ import 'chapter_5/yield_page.dart';
 import 'chapter_6/BlocPage.dart';
 import 'chapter_6/BlocPluginPage.dart';
 import 'chapter7/InheritedWidget.dart';
+import 'chapter_8/error_capture_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -237,6 +238,17 @@ class MyHomePage extends StatelessWidget {
           title: 'Inherited 扩展出的组件',
           subtitle: '依赖登记、InheritedNotifier、InheritedModel 与家族图谱',
           pageBuilder: (context) => const InheritedWidgets(),
+        ),
+      ],
+    ),
+    MenuSection(
+      title: '第八章 错误日志收集',
+      items: [
+        MenuItem(
+          icon: '8.1',
+          title: '错误日志收集',
+          subtitle: '四条通道、try/catch 实验、上报链路与符号化',
+          pageBuilder: (context) => const ErrorCapturePage(),
         ),
       ],
     ),
